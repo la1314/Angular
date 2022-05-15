@@ -9,6 +9,6 @@ export class PaisTablaComponent {
 
   constructor() { }
 
-  @Input() paises: Pais[] = [];
+  @Input() paises: any[] = [];
 
 }

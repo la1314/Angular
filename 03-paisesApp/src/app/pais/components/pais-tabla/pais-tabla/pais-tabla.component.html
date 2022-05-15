@@ -14,7 +14,7 @@
             <td><img class="small-flag" [src]="item.flags.png" alt={{item.flag}}></td>
             <td>{{item.capital}}, {{item.name.official}}</td>
             <td>{{item.population | number}} </td>
-            <td><a [routerLink]="['/pais', item.cca3]" >Ver...</a></td>
+            <td><a [routerLink]="['/pais', item.cca3 || item.alpha3Code]">Ver...</a></td>
         </tr>
     </tbody>
 </table>

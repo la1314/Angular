@@ -8,6 +8,15 @@
     </div>
 </div>
 
+<ul class="list-group" *ngIf="mostrarSugerencias" >
+    <li *ngFor="let item of paisesSugeridos" class="list-group-item list-group-item-action" (click)="buscar(item.name.common)" >
+       <a class="nav-link" [routerLink]="['/pais', item.ccn3]" > {{item.name.common}}</a>
+    </li>
+    <li (click)="buscar(termino)" class="list-group-item list-group-item-action" >
+        <a class="nav-link"> Buscar {{termino}}</a>
+     </li>
+</ul>
+
 <hr>
 
 <div *ngIf="hayError" class="alert alert-danger">

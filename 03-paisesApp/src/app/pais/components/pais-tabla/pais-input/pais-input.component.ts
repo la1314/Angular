@@ -24,6 +24,7 @@ export class PaisInputComponent implements OnInit {
     )
     .subscribe(
       valor => {
+        
         this.onDebounce.emit(valor);
       }
     );
