@@ -14,13 +14,14 @@ const routes: Routes = [
     {
         path:'region',
         component: PorRegionComponent
+        
     },
     {
         path:'capital',
         component: PorCapitalComponent
     },
     {
-        path:'pais/:id',
+        path:'pais/:idPais',
         component: VerPaisComponent
     },
     {
